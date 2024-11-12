@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Your Itineraries</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Libre Baskerville', serif;
+            background-color: #f0f8ff;
+        }
+
+        .header {
+            background-color: #33406e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+            width: 250px;
+        }
+
+        .form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #1c2868;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .form button:hover {
+            background-color: #404c8d;
+        }
+
+        .home-button {
+            margin-left: 10px; /* Add some space between the form and the button */
+        }
+
+        #weatherResult, #activitySuggestion {
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid #1c2868; /* Border for the weather result */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside the box */
+            background-color: #ffffff; /* Background color for the box */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            width: 300px; /* Fixed width for the weather box */
+            margin-left: auto; /* Center the box */
+            margin-right: auto; /* Center the box */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #33406e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .itinerary-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="p1.jpg" alt="Travel banner" height="200" width="100%">
+        <h1>Your Itineraries</h1>
+    </div>
+
+    <main>
+        <section class="form">
+            <form id="itineraryForm">
+                <input type="text" id="itineraryInput" placeholder="Enter Itinerary Item" required>
+                <input type="date" id="date" required>
+                <button type="submit">Add Itinerary</button>
+                <a href="index.html" class="home-button">
+                    <button type="button">Home</button>
+                </a>
+            </form>
+        </section>
+        
+        <div id="weatherResult"></div>
+        <div id="activitySuggestion"></div> <!-- Added activity suggestion section -->
+        
+        <section class="itinerary-list">
+            <ul id="itineraryList"></ul> <!-- Changed to an unordered list -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Travel Itinerary Planner</p>
+    </footer>
+
+    <script src="main.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

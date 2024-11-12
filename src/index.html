@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Your Traveler Advisor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Libre Baskerville', serif;
+            background-color: #f0f8ff;
+        }
+
+        .header {
+            background-color: #33406e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .search input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+            width: 250px;
+        }
+
+        .search button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #1c2868;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .search button:hover {
+            background-color: #404c8d;
+        }
+
+        #weatherResult, #clothingRecommendation {
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid #1c2868; /* Border for the weather result */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside the box */
+            background-color: #ffffff; /* Background color for the box */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            width: 300px; /* Fixed width for the weather box */
+            margin-left: auto; /* Center the box */
+            margin-right: auto; /* Center the box */
+        }
+
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            background-color: #1c2868;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navigation a:hover {
+            background-color: #404c8d;
+        }
+
+        #weatherResult img {
+            width: 100px; /* Set the width of the weather icon */
+            height: 100px; /* Set the height of the weather icon */
+        }
+    </style>
+</head>
+<body>
+    <ul id="itineraryList"></ul>
+    <div id="weatherResult" style="display: none;"></div>
+    <div id="activitySuggestion" style="display: none;"></div>
+    <script src="renderer.js"></script>
+    <div class="header">
+        <img src="p1.jpg" alt="Travel banner" height="200" width="100%">
+        <h1>Your Traveler Advisor</h1>
+    </div>
+
+    <form class="search" id="weatherForm">
+        <input type="text" id="locationInput" placeholder="Enter your country or city" required>
+        <button type="submit">See Weather</button>
+    </form>
+
+    <div id="weatherResult"></div>
+    <div id="clothingRecommendation"></div> <!-- Added clothing recommendation section -->
+
+    <div class="navigation">
+        <a href="it.html">Go to Itinerary</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

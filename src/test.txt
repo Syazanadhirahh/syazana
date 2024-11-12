@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life, My Blog</title>
+    <style>
+        /* use style (CSS) to make the website more beautiful */
+        body{
+            background-color: rgb(192, 233, 219);
+        }
+        h1{
+            text-align: center;
+            /* use font arial for the title */
+            font-family: arial black;
+        }
+        hr{
+            border: solid rgb(12, 0, 73) 3px;
+            margin: 20px;
+        }
+        #row{
+            display: flex;
+        }
+        #col1{
+            width: 70%;
+            margin-right: 10px;
+            align-items: center;
+            padding-right: 20px;
+    
+        }
+        
+        #row1{border: solid 2px rgb(63, 48, 84);
+            height: 50%;
+            text-align: justify;
+
+        }
+        #img_r1{
+            height: 100%;
+            width: 30%;
+            float: left;
+            margin-right: 5px;
+            display: flex;
+        }
+        #row2{
+            border: solid 2px rgb(63, 48, 84);
+            height: 50%;
+            text-align: justify;
+            margin-top: 20px;
+            display: block;
+        }
+        
+        #img_r2{
+            display: flex;
+            height: 100%;
+            width: 30%;
+            float: left;
+            margin-right: 5px;
+        }
+        #block{
+            background-color: rgb(135, 207, 207);
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            height: 100%;
+        }
+        #col2{
+            width: 30%;
+            border: solid 2px rgb(63, 48, 84);
+            padding:10px;
+            height: 100%;}
+        #hr2{
+            border: rgb(37, 37, 79) solid ;
+        }
+        nav{
+            text-align: center;
+            color: blue;
+            font-size: larger;
+        }
+        .link{
+            padding: 10px ;
+            border-left: double 2px blue;
+            margin-right: 20px;
+            text-align: center;
+        }
+        p{
+            /* use font tahoma for all pharagraphs */
+            font-family: tahoma;
+            padding: 10px;
+        }
+        h2{
+            padding: 30px;
+        }
+        h3{
+
+        }
+        #subs{
+            padding: 10px ;
+            border: solid 2px rgb(7, 41, 57);
+            background-color: rgb(128, 121, 150);
+            margin-right: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- h1 is for the title -->
+    <!-- also the my life color has been change -->
+    <h1><font color="blueviolet">My Life, </font>My Blog.</h1>
+    <hr>
+    <section id="row">
+        <section id="col1">
+            <section id="row1">
+                <img id="img_r1" src="image2.jpg" alt="">
+                <p>Mar 22 2023 2 min</p>
+                <h3>Transform your winter blues into winter creativity</h3>
+                <p>create a blog post subtitle that summerizes your post in a few short,punchy sentences and.</p>
+            </section>
+            <section id="row2">
+                <img id="img_r2" src="bunga.webp" alt="">
+                <p>Mar 22, 2023 2 min</p>
+                <h3>How decluttering change my life</h3>
+                <p>Create a blog post subtitle that summarizes your post in a few short,punchy sentences and...</p>
+            </section>
+        
+        </section>
+        <section id="col2">
+            <section id="block">
+                <h2>Let the post come to you</h2>
+                <p>email*</p>
+                <hr id="hr2">
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <p id="subs">Subscribe</p>
+            </section>
+
+        </section>
+
+    </section>
+    <br>
+    <hr>
+    <!-- nav for link  -->
+    <nav>
+        <a href="http://twitter.com">twitter</a>
+        <a href="http://facebook.com"><span class="link">FB</span></a>
+        <a href="http://instagram.com"><span class="link">Instagram</span></a>
+        
+    </nav>
+    
+</body>
+</html>
+
+
+<meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+
+
+
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <title>Your Traveler Advisor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .header {
+      background-color: #7cbce4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #ccc;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="p4.webp" alt="" height="200" width="100%">
+    <h1>Your Travelor Advisor</h1>
+  </div>
+
+  <div class="content">
+    
+    <h2>The Best Travel Buddy</h2>
+    <button class="button">DOWNLOAD NOW</button>
+  </div>
+
+</body>
+</html>
+
+
+
+32804b24a847407391c53709241010
